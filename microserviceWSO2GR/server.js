@@ -436,7 +436,7 @@ module.exports = async function (fastify, opts) {
 
   })
 
-	fastify.listen(8090, err => {
+	fastify.listen(3000, err => {
 	  if (err) throw err
 	  const port = fastify.server.address().port
 	  console.log(`server listening on ${port}`)
