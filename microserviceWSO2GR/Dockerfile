@@ -1,0 +1,13 @@
+WORKDIR /usr/src/app
+COPY package.json .
+
+
+RUN apt-get update && apt-get install -y curl
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get update && apt-get install -y nodejs
+
+
+EXPOSE 9080
+CMD ["npm","start"]
+
+COPY . .
