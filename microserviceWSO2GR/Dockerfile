@@ -1,3 +1,4 @@
+FROM isim/oraclejava:1.8.0_101
 WORKDIR /usr/src/app
 COPY package.json .
 
