@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get update && apt-get install -y nodejs
 
 
-EXPOSE 8090
+EXPOSE 3000
 CMD ["npm","start"]
 
 COPY . .
